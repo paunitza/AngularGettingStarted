@@ -1,0 +1,10 @@
+<nav class='navbar navbar-expand navbar-light bg-light'>
+  <a class='navbar-brand' [routerLink]="['/welcome']"> {{pageTitle}} </a>
+  <ul class='nav nav-pills'>
+    <li><a [routerLink]="['/welcome']" class='nav-link'>Welcome</a></li>
+    <li><a [routerLink]="['/products']" class='nav-link'>Products</a></li>
+  </ul>
+</nav>
+<div class='container'>
+    <router-outlet></router-outlet>
+</div>
